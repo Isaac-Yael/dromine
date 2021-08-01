@@ -1,9 +1,11 @@
 :root{
     --blue: #274490;
     --dark_blue: #1E3470;
+    --extradark_blue: #122352;
     --white: #F4F9FF;
     --orange: #DE781A;
     --text_color: #8697C6;
+    --gray: #4B4B4B;
 }
 html{
     font-size: 62.5%;
@@ -56,6 +58,99 @@ h1 span{
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 2.1rem;
-    margin: 10px auto;
+    margin: 10px auto 26px;
     width: 85%;
+}
+.servicios{
+    background-color: var(--dark_blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.services-card{
+    background-color: #D7D7D7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.card_img{
+    width: 100%;
+    height: 195px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.card_img img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.services-card p{
+    color: var(--gray);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 14px 0 0;
+    width: 80%;
+    text-align: center;
+}
+.services-card button{
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    margin: 12px 0 16px;
+}
+.competencia{
+    background-color: #1A2F69;
+    padding: 40px 0;
+}
+.competencia h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.competencia h2 span{
+    color: var(--orange);
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.friends{
+    background-color: var(--extradark_blue);
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.friends h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.friends h2 span{
+    color: var(--orange);
+}
+.friends img{
+    width: 90%;
+    border-radius: 6px;
+    margin: 26px 0 0;
+}
+.testimonials{
+    background-color: #0E1D45;
 }
