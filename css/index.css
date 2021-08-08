@@ -51,6 +51,15 @@ h1 span{
     margin: 10px auto 26px;
     width: 85%;
 }
+.welcome div{
+    width: 100%;
+    height: 35vh;
+}
+.welcome div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .servicios{
     background-color: var(--dark_blue);
     display: flex;
@@ -60,8 +69,9 @@ h1 span{
 }
 .container-cards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 .services-card{
@@ -69,6 +79,7 @@ h1 span{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
     width: 80%;
+    max-width: 395px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +104,18 @@ h1 span{
     width: 80%;
     text-align: center;
 }
+.services-card ul{
+    width: 80%;
+    margin: 10px 0;
+    list-style: inside;
+}
+.services-card ul li{
+    color: var(--gray);
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 4px 0;
+    text-align: center;
+}
 .services-card button{
     background-color: var(--orange);
     color: var(--white);
@@ -102,6 +125,11 @@ h1 span{
     border-radius: 8px;
     border: none;
     margin: 12px 0 16px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+.services-card button:hover{
+    background-color: #de791ab6;
 }
 .competencia{
     background-color: #1A2F69;
@@ -129,7 +157,7 @@ h1 span{
 .friends h2{
     color: var(--white);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 700;
     font-style: italic;
 }
@@ -138,14 +166,24 @@ h1 span{
 }
 .friends img{
     width: 90%;
+    max-width: 420px;
     border-radius: 6px;
     margin: 26px 0 0;
 }
 .testimonials{
     background-color: #0E1D45;
     width: 100%;
-    height: 280px;
     padding: 40px 20px;
+}
+.testimonials h2{
+    color: var(--white);
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.testimonials h2 span{
+    color: var(--orange);
 }
 .testimonials-slide{
     overflow-x: scroll;
@@ -200,6 +238,7 @@ h1 span{
 }
 .privacity .line{
     width: 60%;
+    max-width: 600px;
     margin: 6px auto 16px;
     background-color: var(--orange);
     height: 2px;
@@ -228,5 +267,74 @@ footer p{
     font-size: 1.4rem;
     font-weight: 200;
 }
-/* @media  (min-width: 750px) {
-} */
+@media  (min-width: 750px) {
+    .welcome{
+        padding-top: 80px;
+    }
+    .welcome p{
+        width: 35%;
+    }
+    .container-cards{
+        padding: 0 6vw;
+    }
+    .services-card{
+        width: 40%;
+        max-width: 350px;
+        margin: 14px 10px;
+    }
+    .friends{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .friends h2{
+        text-align: left;
+        font-size: 4.2rem;
+    }
+    .friends h2 span{
+        font-size: 6.8rem;
+        display: block;
+    }
+    .friends img{
+        width: 50%;
+        max-width: 500px;
+        margin: 0 0 0 50px;
+    }
+    .testimonials-slide{
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding-bottom: 14px;
+    }
+    .testimonials-slide::-webkit-scrollbar{
+        height: 7px;
+    }
+    .testimonials-slide::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, .55);
+        border-radius: 10px;
+    }
+}
+@media  (min-width: 1024px){
+    h1{
+        font-size: 3.6rem;
+    }
+    .welcome p{
+        width: 26%;
+    }
+    .testimonials-slide{
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonials-slide::-webkit-scrollbar{
+        width: 0;
+    }
+    .testimonials-slide-items{
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
