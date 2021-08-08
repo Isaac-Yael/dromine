@@ -35,8 +35,49 @@ nav div{
 .logo{
     grid-column: 2/3;
 }
+#menu{
+    cursor: pointer;
+    z-index: 1000;
+}
+.burger_ul{
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--extradark_blue);
+    top: 0;
+    right: -80vw;
+    list-style: none;
+    transition: .2s;
+}
+.burger_ul-tras{
+    transform: translate(-80vw);
+}
+.close{
+    position: absolute;
+    width: 36px;
+    top: 24px;
+    right: 30px;
+}
 .burger_ul li{
-    display: none;
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin: 14px 0;
+    position: relative;
+}
+.burger_ul li a{
+    color: var(--white);
+    text-decoration: none;
+    width: 100%;
+}
+#arrow_down{
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .welcome{
     background-color: var(--dark_blue);
