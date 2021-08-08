@@ -19,65 +19,13 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
 }
-nav{
-    width: 100%;
-    height: 60px;
-    background-color: var(--blue);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
-    position: fixed;
-}
-nav div{
-    justify-self: center;
-    align-self: center;
-}
-.logo{
-    grid-column: 2/3;
-}
-#menu{
-    cursor: pointer;
-    z-index: 1000;
-}
-.burger_ul{
-    padding-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    width: 80vw;
-    height: 100vh;
+body::-webkit-scrollbar{
+    width: 8px;
     background-color: var(--extradark_blue);
-    top: 0;
-    right: -80vw;
-    list-style: none;
-    transition: .2s;
 }
-.burger_ul-tras{
-    transform: translate(-80vw);
-}
-.close{
-    position: absolute;
-    width: 36px;
-    top: 24px;
-    right: 30px;
-}
-.burger_ul li{
-    font-weight: 400;
-    font-size: 2.4rem;
-    margin: 14px 0;
-    position: relative;
-}
-.burger_ul li a{
-    color: var(--white);
-    text-decoration: none;
-    width: 100%;
-}
-#arrow_down{
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .55);
 }
 .welcome{
     background-color: var(--dark_blue);
@@ -203,6 +151,9 @@ h1 span{
     overflow-x: scroll;
     white-space: nowrap;
 }
+.testimonials-slide::-webkit-scrollbar{
+    width: 0;
+}
 .testimonials-slide-items{
     display: inline-block;
     background-color: var(--green);
@@ -277,3 +228,5 @@ footer p{
     font-size: 1.4rem;
     font-weight: 200;
 }
+/* @media  (min-width: 750px) {
+} */
