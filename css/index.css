@@ -1,32 +1,4 @@
-:root{
-    --blue: #274490;
-    --dark_blue: #1E3470;
-    --extradark_blue: #122352;
-    --white: #F4F9FF;
-    --orange: #DE781A;
-    --text_color: #8697C6;
-    --gray: #4B4B4B;
-    --green: #6EBA32;
-}
-html{
-    font-size: 62.5%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-}
-body::-webkit-scrollbar{
-    width: 8px;
-    background-color: var(--extradark_blue);
-}
-body::-webkit-scrollbar-thumb{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, .55);
-}
+
 .welcome{
     background-color: var(--dark_blue);
     padding-top: 60px;
@@ -221,51 +193,6 @@ h1 span{
 }
 .testimonials-slide-items .picture_client{
     border-radius: 50%;
-}
-.privacity{
-    background-color: var(--white);
-    width: 100%;
-    padding: 24px 0;
-}
-.privacity a{
-    display: block;
-    text-decoration: none;
-    color: var(--gray);
-    font-weight: 500;
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-}
-.privacity .line{
-    width: 60%;
-    max-width: 600px;
-    margin: 6px auto 16px;
-    background-color: var(--orange);
-    height: 2px;
-
-}
-.privacity div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.privacity div img{
-    margin: 0 8px;
-    width: 36px;
-}
-footer{
-    background-color: var(--extradark_blue);
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer p{
-    color: var(--white);
-    font-size: 1.4rem;
-    font-weight: 200;
 }
 @media  (min-width: 750px) {
     .welcome{

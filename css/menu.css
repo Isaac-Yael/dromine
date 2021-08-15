@@ -1,3 +1,32 @@
+:root{
+    --blue: #274490;
+    --dark_blue: #1E3470;
+    --extradark_blue: #122352;
+    --white: #F4F9FF;
+    --orange: #DE781A;
+    --text_color: #8697C6;
+    --gray: #4B4B4B;
+    --green: #6EBA32;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--extradark_blue);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .55);
+}
 nav{
     width: 100%;
     height: 60px;
@@ -6,6 +35,7 @@ nav{
     grid-template-columns: 1fr 2fr 1fr;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
     position: fixed;
+    z-index: 1000;
 }
 nav div{
     justify-self: center;
@@ -72,6 +102,51 @@ nav div{
     font-size: 1.4rem;
     opacity: 80%;
     margin: 0 0 16px;
+}
+.privacity{
+    background-color: var(--white);
+    width: 100%;
+    padding: 24px 0;
+}
+.privacity a{
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.privacity .line{
+    width: 60%;
+    max-width: 600px;
+    margin: 6px auto 16px;
+    background-color: var(--orange);
+    height: 2px;
+
+}
+.privacity div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.privacity div img{
+    margin: 0 8px;
+    width: 36px;
+}
+footer{
+    background-color: var(--extradark_blue);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 200;
 }
 @media  (min-width: 1024px){
     nav{
