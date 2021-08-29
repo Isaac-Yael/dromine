@@ -1,29 +1,33 @@
 .one{
-    background-color: #1A2F69;
-    padding: 85px 0px 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    grid-gap: 25px;
+    padding: 80px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/cartografia_1.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
 }
-.div_1{
+.div_1, .div_2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 500px;
 }
 h1{
     color: var(--orange);
-    font-size: 2.8rem;
+    font-size: 4.0rem;
     text-align: center;
-    margin-bottom: 12px;
 }
 .descrip{
-    color: var(--white);
+    color: var(--gray);
     width: 70%;
     max-width: 500px;
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 .ilustration{
     width: 80%;
