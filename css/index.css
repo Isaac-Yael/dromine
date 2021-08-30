@@ -103,15 +103,48 @@ h1 span{
 .services-card button:hover{
     background-color: #de791ab6;
 }
+.services-card button a{
+    text-decoration: none;
+    color: var(--white);
+}
 .competencia{
-    background-color: #1A2F69;
-    padding: 40px 0;
+    background-color: var(--white);
+    padding: 60px 0;
 }
 .competencia h2{
-    color: var(--white);
+    color: var(--extradark_blue);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
+}
+.competencias_container{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 0 20px 30px;
+}
+.competencias_container_div{
+    min-width: 70vw;
+    margin-right: 30px;
+}
+.competencias_container_div p{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+.competencias_img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.competencias_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .competencia h2 span{
     color: var(--orange);
